@@ -1,3 +1,4 @@
+<img width="1353" height="536" alt="image" src="https://github.com/user-attachments/assets/17f0550e-09b2-409d-ae1a-844b8bba10ce" />
 # Pre-Harvest Marketplace
 
 A B2B/B2C pre-harvest agricultural marketplace with escrow-like split payments, role-based dashboards, order approval, delivery tracking, and crop-loss insurance claims.
