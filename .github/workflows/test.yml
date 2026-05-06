@@ -1,0 +1,19 @@
+name: Test Pipeline
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install
+      run: npm install
+
+    - name: API Test
+      run: echo "Run newman এখানে"
+
+    - name: UI Test
+      run: echo "Run selenium এখানে"
