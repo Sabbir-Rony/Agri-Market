@@ -7,13 +7,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout Code
+      uses: actions/checkout@v3
 
-    - name: Install
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      # এটি এখন backend ফোল্ডারে গিয়ে npm install চালাবে
+      working-directory: ./backend 
       run: npm install
 
     - name: API Test
-      run: echo "Run newman এখানে"
+      working-directory: ./backend
+      run: echo "Run your Newman commands here"
 
     - name: UI Test
-      run: echo "Run selenium এখানে"
+      working-directory: ./backend
+      run: echo "Run your Selenium commands here"
